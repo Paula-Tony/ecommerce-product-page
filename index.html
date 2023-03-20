@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="container-md header-container">
+      <header
+        class="header d-flex align-items-center justify-content-between pt-3 pb-3 pt-md-4 pb-md-4"
+      >
+        <div class="d-flex align-items-center">
+          <span class="menu d-block d-lg-none">
+            <img src="images/icon-menu.svg" class="me-3" />
+          </span>
+          <a href="#" class="text-decoration-none fs-1 fw-bold text-black me-5"
+            >sneakers</a
+          >
+          <ul class="nav p-4 p-lg-0 flex-column flex-lg-row d-lg-flex">
+            <img
+              class="close mb-4 align-self-start d-none"
+              src="images/icon-close.svg"
+            />
+            <li class="link position-relative pt-4 pt-lg-0 ps-lg-3 pe-lg-3">
+              Collections
+            </li>
+            <li class="link position-relative pt-4 pt-lg-0 ps-lg-3 pe-lg-3">
+              Men
+            </li>
+            <li class="link position-relative pt-4 pt-lg-0 ps-lg-3 pe-lg-3">
+              Women
+            </li>
+            <li class="link position-relative pt-4 pt-lg-0 ps-lg-3 pe-lg-3">
+              About
+            </li>
+            <li class="link position-relative pt-4 pt-lg-0 ps-lg-3 pe-lg-3">
+              Contact
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span class="cart me-4 position-relative">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <span
+              class="num position-absolute text-white fw-bold rounded"
+            ></span>
+          </span>
+          <div class="cart-card position-absolute bg-white d-none rounded">
+            <div class="cart-title fw-bold p-3">Cart</div>
+            <div class="product-container p-3">
+              <p class="empty-msg text-center">Your cart is empty</p>
+            </div>
+          </div>
+          <span class="user-img">
+            <img
+              class="rounded-circle"
+              src="images/image-avatar.png"
+              alt="user image"
+            />
+          </span>
+        </div>
+      </header>
+    </div>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <div class="container-md">
+      <main class="main row">
+        <div
+          class="product-imgs p-0 p-md-4 col-12 col-md-6 d-md-flex align-items-center justify-content-center flex-column"
+        >
+          <div class="main-img mb-md-4 overflow-hidden position-relative">
+            <div
+              class="previous d-flex align-items-center justify-content-center d-md-none position-absolute rounded-circle bg-white"
+            >
+              <svg
+                class="me-1"
+                width="12"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <img
+              class="img-fluid"
+              src="images/image-product-1.jpg"
+              alt="sneaker"
+            />
+            <div
+              class="next d-flex align-items-center justify-content-center d-md-none position-absolute rounded-circle bg-white"
+            >
+              <svg
+                class="ms-1"
+                width="13"
+                height="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="thumbnail-imgs d-none d-md-flex gap-4 justify-content-center"
+          >
+            <div data-img="1" class="thumb rounded-3 overflow-hidden active">
+              <img
+                class="img-fluid"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div data-img="2" class="thumb rounded-3 overflow-hidden">
+              <img
+                class="img-fluid"
+                src="images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div data-img="3" class="thumb rounded-3 overflow-hidden">
+              <img
+                class="img-fluid"
+                src="images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div data-img="4" class="thumb rounded-3 overflow-hidden">
+              <img
+                class="img-fluid"
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-details p-4 col-12 col-md-6 d-flex justify-content-center flex-column"
+        >
+          <p class="company-name text-uppercase fw-bold">sneaker company</p>
+          <h1 class="fw-bold mb-3 mb-lg-4">Fall Limited Edition Sneakers</h1>
+          <p class="description lh-base fs-lg-5 mb-3 mb-lg-4">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div
+            class="price fs-3 fw-bold d-flex align-items-center align-items-lg-start justify-content-between flex-lg-column mb-3 mb-lg-4 flex-wrap"
+          >
+            <div class="left d-flex align-items-center mb-lg-2">
+              <span class="current-price">$125.00</span>
+              <span class="discount-percent fs-6 ms-3 ps-1 pe-1 rounded-1"
+                >50%</span
+              >
+            </div>
+            <span class="old-price fw-bold text-decoration-line-through fs-5"
+              >$250.00</span
+            >
+          </div>
+
+          <div class="options d-flex align-items-center flex-wrap">
+            <div class="amount-option p-3 rounded-3">
+              <svg
+                class="minus me-lg-5"
+                width="12"
+                height="4"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                    id="a"
+                  />
+                </defs>
+                <use fill-rule="nonzero" xlink:href="#a" />
+              </svg>
+              <span class="amount fw-bold text-center d-inline-block">0</span>
+              <svg
+                class="plus ms-lg-5"
+                width="12"
+                height="12"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                    id="b"
+                  />
+                </defs>
+                <use fill-rule="nonzero" xlink:href="#b" />
+              </svg>
+            </div>
+            <button
+              class="btn fw-bold mt-3 mt-lg-0 ms-lg-4 py-3 px-5 text-white d-flex align-items-center"
+            >
+              <img class="me-3" src="images/icon-cart.svg" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Main End -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
